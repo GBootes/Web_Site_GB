@@ -11,7 +11,7 @@ $(function() {
 
 preloader = function() {
   return $('.preloader').delay(1000).fadeOut(function() {
-    return $('.wrapper').delay(200).fadeIn();
+    return $('.wrapper').delay(1200).fadeIn();
   });
 };
 
@@ -79,18 +79,18 @@ particles = function() {
         'random': true,
         'anim': {
           'enable': true,
-          'speed': 1,
-          'opacity_min': 0.3,
+          'speed': 5,
+          'opacity_min': 0.1,
           'sync': true
         }
       },
       'size': {
-        'value': 3,
+        'value': 10,
         'random': true,
         'anim': {
           'enable': false,
           'speed': 40,
-          'size_min': 0.1,
+          'size_min': 0.3,
           'sync': false
         }
       },
@@ -103,7 +103,7 @@ particles = function() {
       },
       'move': {
         'enable': true,
-        'speed': 3,
+        'speed': 30,
         'direction': 'none',
         'random': true,
         'straight': false,
